@@ -1,0 +1,32 @@
+{
+  "name": "kodillagruntzadanie2",
+  "version": "1.0.0",
+  "description": "first grunt project Bogna",
+  "main": "index.js",
+  "dependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  },
+  "scripts": {
+    "test": "Bogna-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BognaKonstanty/bk-projekt1.git"
+  },
+  "keywords": [
+    "grunt"
+  ],
+  "author": "Bogna Konstanty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BognaKonstanty/bk-projekt1/issues"
+  },
+  "homepage": "https://github.com/BognaKonstanty/bk-projekt1#readme"
+}
