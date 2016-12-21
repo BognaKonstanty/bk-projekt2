@@ -1,0 +1,122 @@
+.flex-center, .icon-part, .icon-part .icon-coffe,
+.icon-part .icon-clock,
+.icon-part .icon-book {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.flex-center2 {
+  align-items: center;
+  justify-content: center; }
+
+.clearfix, .container.icon .row:before, .container.icon .row:after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.message {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+/*HERO*/
+.hero {
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  background-image: url(https://cdn.pixabay.com/photo/2015/11/07/11/16/coffee-1030971_960_720.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; }
+  .hero .slogan {
+    background: rgba(0, 0, 0, 0.5);
+    float: right;
+    max-width: 800px;
+    text-align: center;
+    color: #fff; }
+    .hero .slogan .slogan-text-bold {
+      font-weight: lighter; }
+
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+section > .container,
+section > .heading {
+  width: 100%;
+  text-align: center; }
+
+.container.icon {
+  margin: 80px auto; }
+  .container.icon .row .col-icon-heading {
+    padding: 12px; }
+    .container.icon .row .col-icon-heading h2, .container.icon .row .col-icon-heading p {
+      text-align: center; }
+    .container.icon .row .col-icon-heading p {
+      font-size: 20px;
+      color: #b2b0af;
+      font-family: "Open Sans", sans-serif; }
+    .container.icon .row .col-icon-heading h2 {
+      text-transform: uppercase; }
+
+.icon-part .icon-coffe,
+.icon-part .icon-clock,
+.icon-part .icon-book {
+  border: 0;
+  background: #000000;
+  color: #fff;
+  font-size: 40px;
+  line-height: 75px;
+  border-radius: 15%;
+  width: 75px;
+  height: 75px;
+  margin: 10px; }
+  .icon-part .icon-coffe:hover,
+  .icon-part .icon-clock:hover,
+  .icon-part .icon-book:hover {
+    background: #00CCFF; }
+
+.heading {
+  margin: 80px auto; }
+  .heading p, .heading h2 {
+    text-align: center; }
+  .heading h2 {
+    text-transform: uppercase; }
+  .heading p {
+    font-size: 20px;
+    color: #b2b0af;
+    font-family: "Open Sans", sans-serif; }

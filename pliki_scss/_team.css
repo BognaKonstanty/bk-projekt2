@@ -1,0 +1,52 @@
+.flex-center, .circle, .film span {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.flex-center2, .film {
+  align-items: center;
+  justify-content: center; }
+
+.clearfix, .container .row:before, .container .row:after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.message, .circle img, .film {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
+/*TEAM*/
+.container .row .element-film {
+  position: relative; }
+  .container .row .element-film p {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #000000; }
+
+.circle {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  border-radius: 50%; }
+  .circle:hover .film {
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    color: #fff; }
+  .circle img {
+    border-radius: 50%;
+    display: block; }
+
+.film {
+  display: none;
+  border-radius: 50%;
+  z-index: 2; }
+  .film span {
+    position: absolute;
+    z-index: 1; }
+
+.team h2 {
+  text-align: center; }

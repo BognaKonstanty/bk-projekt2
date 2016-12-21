@@ -2,48 +2,58 @@ module.exports = function(grunt) {
 
   // Project configuration.
   grunt.initConfig({
-  	sass: {
-  		options: {
-  			sourceMap: true
-  		},
-  		dist: {
-  			files: {
-  				'main.css': 'main.sass'
-  			}
-  		}
-  	},
 
-  	imagemin: {
-  		dynamic: {
-  			files: [{
-  				expand: true,
-  				cwd: 'images/',
-  				src: ['**/*.{png,jpg,gif}'],
-  				dest: 'images/build/'
-  			}]
-  		}
-  	}
 
-	watch: {
-    	scripts: {
-        	files: ['sass/*.sass'],
-        	tasks: ['sass'],
-        	options: {
-            	spawn: false,
-        	},
-    	} 
-	}
+    sass: {
+      options: {
+        sourceMap: true
+      },
+      dist: {
+             files: [{
+             expand: true,
+            cwd: 'pliki_scss/',
+            src: ['*.scss'],
+            dest: 'pliki_css/',
+            ext: '.css'
+        }]
+      }
+    },
 
-	browserSync: {
+    imagemin: {
+      dynamic: {
+        files: [{
+          expand: true,
+          cwd: 'images/',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'images/build/'
+        }]
+      }
+    },
+
+  watch: {
+      scripts: {
+          files: ['pliki_scss/*.scss'],
+          tasks: ['sass'],
+          options: {
+              spawn: false,
+          },
+      } 
+  },
+
+  browserSync: {
     bsFiles: {
-        src : 'assets/css/*.css'
+        src : [
+          'pliki_css/*.css',
+          '*.html'
+        ]
     },
     options: {
+      watchTask: true,
         server: {
             baseDir: "./"
         }
     }
-	}
+  }
 
   });
 
@@ -55,5 +65,7 @@ module.exports = function(grunt) {
 
   // Default task(s).
   
-  grunt.registerTask('default', ['sass', 'imagemin','watch', 'sync']);
+  grunt.registerTask('default', ['sass', 'imagemin','watch']);
+  grunt.registerTask('sync', ['browserSync', 'watch']);
 };
+
