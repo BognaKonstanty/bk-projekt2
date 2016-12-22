@@ -11,9 +11,9 @@ module.exports = function(grunt) {
       dist: {
              files: [{
              expand: true,
-            cwd: 'pliki_scss/',
-            src: ['*.scss'],
-            dest: 'pliki_css/',
+            cwd: 'scss/',
+            src: ['scss/style.scss'],
+            dest: 'css/style.css',
             ext: '.css'
         }]
       }
@@ -23,16 +23,16 @@ module.exports = function(grunt) {
       dynamic: {
         files: [{
           expand: true,
-          cwd: 'images/',
+          cwd: 'images/src',
           src: ['**/*.{png,jpg,gif}'],
-          dest: 'images/build/'
+          dest: 'images/dist/'
         }]
       }
     },
 
   watch: {
       scripts: {
-          files: ['pliki_scss/*.scss'],
+          files: ['scss/style.scss'],
           tasks: ['sass'],
           options: {
               spawn: false,
@@ -43,7 +43,7 @@ module.exports = function(grunt) {
   browserSync: {
     bsFiles: {
         src : [
-          'pliki_css/*.css',
+          'css/style.css',
           '*.html'
         ]
     },
